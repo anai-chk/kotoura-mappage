@@ -1,1 +1,156 @@
-joruri/top/addition.css
+@charset "UTF-8";
+/* CSS Document */
+
+/* PC - レイアウト */
+
+div.docTab-life-event-wrap {
+  overflow: hidden;
+  clear: both;
+}
+div.docTab-life-event-wrap div.docTab-wrap {
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+}
+div.docTab-life-event-wrap div.life-event-wrap {
+  width: 49%;
+  float: left;
+}
+/*  ライフイベント  */
+div.life-event {
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+div.life-event ul {
+}
+div.life-event ul li {
+  float: left;
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+div.life-event ul li:nth-child(4n) {
+  margin-right: 0;
+}
+/* */
+
+div.life-event.sp ul li {
+  float: left;
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+div.life-event.sp ul li:nth-child(4n) {
+  margin-right: 0;
+}
+/* */
+
+div.life-event ul li a {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+  padding: 15px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 0 2px 0 0 rgb(215, 215, 215);
+  letter-spacing: -1px;
+  transition: 0.25s all;
+  white-space: nowrap;
+}
+div.life-event ul li a:hover {
+  text-decoration: underline;
+  background: #f8f8f8; /* color: #01bf81;  */
+}
+div.life-event ul li a div.icon {
+}
+div.life-event ul li a div.icon-label {
+  /* border-top: 2px dotted #ccc; */
+}
+div.life-event div.heading {
+  margin-bottom: 20px;
+  font-size: 150%;
+}
+div.life-event ul li a div.icon img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 新着情報 を ... に する */
+ul.shinchaku li {
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ul.shinchaku li:nth-child(n + 6),
+ul.shinchaku li span.attributes span.separator,
+ul.shinchaku li span.attributes span.unit {
+  display: none;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* タブの上書き */
+#docTabPortal .tabs a,
+#docTab .tabs a {
+  width: 23.5%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+#docTabPortal .tabs span:nth-child(4) a,
+#docTab .tabs span:nth-child(4) a {
+  margin-right: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 申請書ダウンロｰド の 追加 */
+
+#links #inquiry .pieceBody,
+#links #adBanner .pieceBody,
+#links #application .pieceBody,
+#links #bnFaq .pieceBody,
+#links #voice .pieceBody,
+#links #facebook .pieceBody,
+#links #broadcast .pieceBody,
+#links #download .pieceBody {
+  background: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* sp */
+
+div#contentContainer div#voice img,
+div#contentContainer div#facebook img,
+div#contentContainer div#inquiry img,
+div#contentContainer div#broadcast img div#contentContainer div#download img {
+  display: block;
+  max-width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div#contentContainer div#download a {
+  display: block;
+  width: calc(100% - 10px);
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+div#contentContainer div#download a img {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+}
