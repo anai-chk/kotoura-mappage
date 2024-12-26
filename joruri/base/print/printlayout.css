@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* =========================================================
+   Print Top
+========================================================= */
+/* layout
+----------------------------------------------- */
+body {
+  background-color: #fff;
+  zoom: 90%;
+}
+#header,
+#banner,
+#navi,
+#main,
+#footer {
+  width: 1200px;
+}
+
+/* IE */
+*html #header,
+*html #banner,
+*html #navi,
+*html #main,
+*html #footer {
+  width: 1200px;
+}
+
+/* Header Banner
+----------------------------------------------- */
+.menu,
+#commonHeader,
+#adBanner,
+#footerAdBanner {
+  display: none;
+}
+
+/* attribute
+----------------------------------------------- */
+.attribute {
+  float: left;
+  width: 100%;
+}
+.attributeSaiyojoho,
+.attributeBosyu,
+.attributeKyoka {
+  margin-left: 0;
+}
+
+/* page-title piece
+----------------------------------------------- */
+#pageTitle {
+  width: 1200px;
+}
+*html #pageTitle {
+  width: 1200px;
+}
+
+#container::after {
+  background-image: none;
+}

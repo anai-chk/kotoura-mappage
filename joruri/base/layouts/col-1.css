@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* =========================================================
+   Layout 1 Columns
+========================================================= */
+
+/* body
+----------------------------------------------- */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* container
+----------------------------------------------- */
+#container {
+  /* 	 width: 100%;
+ max-width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+  position: relative; */
+
+  /*  background: #f7f7f5;
+  background: #fff;
+  
+ background: #f1f2eb;
+ overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 800px;
+  min-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  box-sizing: border-box; */
+
+  min-width: 1200px;
+}
+
+#container:after {
+  background-image: url(../images/wave.png);
+  background-repeat: repeat-x;
+  background-size: 1000px 200px;
+  top: 0;
+  content: "";
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  z-index: -1;
+}
+
+* html #container {
+  width: expression(
+    document.documentElement.clientWidth < 802? "800px":
+      document.documentElement.clientWidth > 1202? "1200px": "auto"
+  );
+}
+
+div#header #headerContainer div.pieceBody {
+  text-align: right;
+}
+
+/* header
+----------------------------------------------- */
+#header {
+  clear: both;
+}
+#headerContainer {
+  /* padding: 0 10px; */
+}
+
+/* banner
+----------------------------------------------- */
+#banner {
+  clear: both;
+  /* margin-bottom: 7px; */
+}
+#bannerContainer {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* navi
+----------------------------------------------- */
+#navi {
+  clear: both;
+}
+#naviContainer {
+  padding: 0 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* main
+----------------------------------------------- */
+#main {
+  clear: both;
+  /* margin-top: 10px; */
+}
+
+/* wrapper
+----------------------------------------------- */
+#wrapper {
+  clear: both;
+  width: 100%;
+}
+
+/* content
+----------------------------------------------- */
+#content {
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#content #contentContainer {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* footer
+----------------------------------------------- */
+#footer {
+  clear: both;
+  width: 100%;
+
+  /*  background: #444; */
+}
+#footerContainer {
+  padding: 30px 0 0;
+  position: relative;
+}
+
+#footerContainer:after {
+  background-image: url(../images/wave_bottom.png);
+  background-repeat: repeat-x;
+  background-size: 1000px 200px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+#footerContainer div#footerBody {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* pieces
+----------------------------------------------- */
+#main .pieceSeparator {
+  margin: 10px 0;
+}

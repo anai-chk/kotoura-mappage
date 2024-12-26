@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/* =========================================================
+   Layout 2 Columns
+========================================================= */
+
+/* body
+----------------------------------------------- */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #fbfaf5;
+}
+
+/* container
+----------------------------------------------- */
+#container {
+  width: 100%;
+  /*  max-width: 1200px; */
+  min-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  /* background: #f7f7f5; */
+  /* background: #fff; */
+
+  /*  background: #f1f2eb; */
+  overflow: hidden;
+  /* background: url(../images/wave.svg) no-repeat;
+ background-size: 2000px 243px;
+ background-position: top center; */
+  /* z-index: -1; */
+}
+
+#container:after {
+  background-image: url(../images/wave.png);
+  background-repeat: repeat-x;
+  background-size: 1000px 200px;
+  top: 0;
+  content: "";
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  z-index: -1;
+}
+
+/* #container:before {
+	background: #fff;
+	position: absolute;
+	content: "";
+	width: 100vw;
+	height: 500px;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 100vw;
+	transform: srotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+#container:after {
+	background: #faf2e4;
+	position: absolute;
+	content: "";
+	width: 100vw;
+	height: 250px;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -2;
+} */
+
+* html #container {
+  width: expression(
+    document.documentElement.clientWidth < 802? "800px":
+      document.documentElement.clientWidth > 1202? "1200px": "auto"
+  );
+}
+
+/* header
+----------------------------------------------- */
+#header {
+  clear: both;
+
+  /* background: #fff; */
+}
+#headerContainer {
+  /* padding: 0 10px; */
+}
+
+div#header #headerContainer div.pieceBody {
+  text-align: right;
+}
+
+/* banner
+----------------------------------------------- */
+#banner {
+  clear: both;
+  margin-bottom: 7px;
+}
+#bannerContainer {
+  padding: 0 10px;
+}
+
+/* navi
+----------------------------------------------- */
+#navi {
+  clear: both;
+}
+#naviContainer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* main
+----------------------------------------------- */
+#main {
+  clear: both;
+  margin-top: 10px;
+  /* padding: 0 10px; */
+
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 1000px; */
+  max-width: 1200px;
+  width: 100%;
+
+  padding-bottom: 20px;
+}
+#main:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+
+/* content(center column)
+----------------------------------------------- */
+#content {
+  /* float: right; */
+  float: left;
+  /*   width: 100%; */
+  width: calc(100% - 20px);
+  /* margin-left: -180px; */
+  margin-left: -180px;
+  /* margin-bottom: 20px; */
+}
+/* #contentBody {
+  padding-left: 180px;
+  
+} */
+
+#contentContainer {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1em;
+
+  margin-left: 180px;
+}
+
+/* トップページ ・ 分野 で 背景 を 非表示に する */
+
+body#page-index #contentContainer,
+body#page-bunya-kurashi-index #contentContainer,
+body#page-bunya-kosodateManabi-index #contentContainer,
+body#page-bunya-fukushi-index #contentContainer,
+body#page-bunya-kanko-index #contentContainer,
+body#page-bunya-gyoseimachizukuri-index #contentContainer,
+body#page-bunya-wakuseiKotoura-index #contentContainer {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+  margin-left: 180px;
+}
+
+/* menu(left column)
+----------------------------------------------- */
+/* #menu {
+  float: left;
+  width: 170px;
+  margin-bottom: 20px;
+} */
+
+#menu {
+  width: 100%;
+  margin-bottom: 20px;
+
+  /* clear: both; */
+  /* overflow: hidden; */
+
+  float: right;
+  margin: 0;
+  width: 170px;
+}
+
+#links {
+  float: right;
+  width: 170px;
+  margin-bottom: 20px;
+}
+
+/* footer
+----------------------------------------------- */
+#footer {
+  clear: both;
+  width: 100%;
+
+  /*  background: #444; */
+}
+#footerContainer {
+  padding: 30px 0 0;
+  position: relative;
+}
+
+#footerContainer:after {
+  background-image: url(../images/wave_bottom.png);
+  background-repeat: repeat-x;
+  background-size: 1000px 200px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+#footerABanner {
+  background: #e5f8f2;
+}
+
+/* pieces
+----------------------------------------------- */
+#main .pieceSeparator {
+  margin: 10px 0;
+}
+
+/* #wrapper */
+
+#wrapper:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+
+#wrapper {
+  min-height: 1px;
+}

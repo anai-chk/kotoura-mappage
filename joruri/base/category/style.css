@@ -1,0 +1,1468 @@
+@charset "UTF-8";
+@import "../base/init.css";
+@import "../base/style.css";
+@import "../piece/style.css";
+
+/* =========================================================
+   category
+========================================================= */
+
+/* Bunya Ichiran
+----------------------------------------------- */
+
+/*
+.categoryKurashi,
+.categoryFukushi,
+.categoryKyoikubunka,
+.categoryKanko,
+.categorySangyoshigoto,
+.categoryGyoseimachizukuri,
+.categoryBosaigai {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  background-color: #e3f5ff;
+  line-height: 1.5;
+}
+.categoryBosaigai {
+  background-color: #e3f5ff;
+}
+.contentArticleCategory .category h2 {
+  float: left;
+  width: 150px;
+  padding-left: 60px;
+  line-height: 50px;
+}
+.contentArticleCategory .categoryKurashi h2 {
+  background-image: url(./images/ic-kurashi.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .categoryFukushi h2 {
+  background-image: url(./images/ic-fukushi.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .categoryKyoikubunka h2 {
+  background-image: url(./images/ic-kyoiku.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .categoryKanko h2 {
+  background-image: url(./images/ic-kanko.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .categorySangyoshigoto h2 {
+  background-image: url(./images/ic-sangyou.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .categoryGyoseimachizukuri h2 {
+  background-image: url(./images/ic-gyosei.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .categoryBosaigai h2 {
+  background-image: url(./images/ic-bosai.gif);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.contentArticleCategory .category .children div {
+  display: inline;
+  padding-right: 10px;
+}
+.contentArticleCategory .categoryFukushi,
+.contentArticleCategory .categoryKyoikubunka,
+.contentArticleCategory .categoryKanko,
+.contentArticleCategory .categorySangyoshigoto,
+.contentArticleCategory .categoryGyoseimachizukuri,
+.contentArticleCategory .categoryBosaigai {
+  clear: both;
+}
+
+/* shinchaku-ichiran
+----------------------------------------------- */
+
+.contentArticleCategory .latest {
+  /* margin-bottom: 30px;
+  padding: 0px;
+  background-image: url(./images/tl-shinchaku-repeat.gif);
+  background-position: left top;
+  background-repeat: repeat-x; */
+}
+.contentArticleCategory .latest h2 {
+  /* height: 30px;
+  line-height: 30px; */
+  margin-bottom: 1em;
+  padding: 0.5em 0.5em 0.5em;
+  /* background-image: url(./images/tl-shinchaku.gif);
+  background-repeat: no-repeat;
+  background-position: left top;
+  color: #000000; */
+  /* font-size: 150%;
+  font-weight: bold; */
+  /* border-bottom: 2px solid #00b4e5; */
+  border-bottom: 2px solid #01bf81;
+  font-size: 21px;
+}
+.contentArticleCategory ul {
+  /* padding: 0 5px; */
+  padding: 0 20px 0 15px;
+}
+
+.contentArticleCategory li {
+  /* padding: 0 0 5px 10px; */
+  /* background-image: url(./images/ic-list-shinchaku.gif); */
+  /* background-repeat: no-repeat;
+  background-position: left 5px; */
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 8px;
+  /* padding: 0 0 0 1.25em; */
+  /* background-image: url(./images/ic-list-shinchaku.gif); */
+  /* background-repeat: no-repeat;
+  background-position: left 7px; */
+
+  position: relative;
+
+  border-bottom: 2px dotted #ccc;
+  padding-bottom: 0.5em;
+  padding-left: 1.25em;
+  padding-top: 0.5em;
+}
+
+.contentArticleCategory li a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.contentArticleCategory li a:hover {
+  text-decoration: none;
+}
+
+.contentArticleCategory li:before {
+  /* position: absolute;
+	top: 50%;
+	left: 0;
+
+	display: block;
+
+	width: 5px;
+	height: 5px;
+	content: '';
+	transition: all .2s ease-in-out;
+	-webkit-transform: translate(0, -50%) rotate(45deg);          
+			transform: translate(0, -50%) rotate(45deg);
+
+	border-top: 1px solid #00b4e5;
+	border-right: 1px solid #00b4e5;
+	
+	background: none; */
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0.5em;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: all 0.2s ease-in-out 0s;
+  width: 5px;
+  z-index: 1;
+}
+
+.contentArticleCategory li:after {
+  background: #01bf81 none repeat scroll 0 0;
+  border-radius: 1000px;
+  content: "";
+  display: block;
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+  z-index: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* category Ichiran
+----------------------------------------------- */
+.contentArticleCategory {
+  clear: both;
+  margin-bottom: 60px;
+}
+
+.contentArticleCategory div.pieceBody {
+  clear: both;
+  overflow: hidden;
+}
+
+.contentArticleCategory .pieceHeader {
+  /* margin-bottom: 10px;
+  background-image: url(./images/bg-shinchaku-repeat.gif);
+  background-repeat: repeat-x;
+  background-position: left top; */
+}
+.contentArticleCategory .pieceHeader h2 {
+  /* height: 30px;
+  line-height: 30px; */
+  margin-bottom: 20px;
+  /* padding-left: 10px; */
+  /* background-image: url(./images/tl-shinchaku.gif); */
+  /* background-repeat: no-repeat;
+  background-position: left top; */
+  color: #333;
+  font-weight: bold;
+  font-size: 200%;
+  /* border-bottom: 4px solid #b0dfff; */
+  text-align: center;
+}
+
+.categoryKurashi,
+.categoryFukushi,
+.categoryKyoikubunka,
+.categoryKanko,
+.categorySangyoshigoto,
+.categoryGyoseimachizukuri,
+.categoryBosaigai,
+.categorySonota {
+  float: left;
+  width: 100%;
+  /* min-height: 170px; */
+  line-height: 1.5;
+  /* margin: 0 1% 1% 0; */
+
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: #f8f8f8;
+
+  border-bottom: 1px solid #dddad8;
+
+  /* font-size: 13px; */
+}
+
+body#page-bunya-index .contentArticleCategory .category:first-child {
+  /* border-top: 1px solid #dddad8; */
+  border-top: 2px dotted #ccc;
+}
+
+.categoryBosaigai {
+}
+.contentArticleCategory .category h2 {
+  /* float: left; */
+  line-height: 45px;
+  padding-left: 60px;
+  float: left;
+}
+/* .contentArticleCategory .categoryKurashi h2 {
+  background-image: url(./images/ic-kurashi.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .categoryFukushi h2 {
+  background-image: url(./images/ic-fukushi.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .categoryKyoikubunka h2 {
+  background-image: url(./images/ic-kyoiku.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .categoryKanko h2 {
+  background-image: url(./images/ic-kanko.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .categorySangyoshigoto h2 {
+  background-image: url(./images/ic-sangyou.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .categoryGyoseimachizukuri h2 {
+  background-image: url(./images/ic-gyosei.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .categoryBosaigai h2 {
+  background-image: url(./images/ic-bosai.gif);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+ */
+
+/* リニューアル分野 */
+.category-kurashi,
+.category-kosodateManabi,
+.category-fukushi,
+.category-kanko,
+.category-iju,
+.category-sangyo,
+.category-wakuseiKotoura {
+  float: left;
+  width: 100%;
+  /* min-height: 170px; */
+  line-height: 1.5;
+  /* margin: 0 1% 1% 0; */
+
+  box-sizing: border-box;
+  padding: 10px 0;
+  /* background: #f8f8f8; */
+  background: #fff;
+  border-bottom: 2px dotted #ccc;
+
+  /* font-size: 13px; */
+}
+
+.contentArticleCategory .category-kurashi h2 {
+  background-image: url(./images/nav_icon_kurashi.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .category-kosodateManabi h2 {
+  background-image: url(./images/nav_icon_kosodate.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .category-fukushi h2 {
+  background-image: url(./images/nav_icon_fukushi.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .category-kanko h2 {
+  background-image: url(./images/nav_icon_kanko.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .category-iju h2 {
+  background-image: url(./images/nav_icon_iju.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .category-sangyo h2 {
+  background-image: url(./images/nav_icon_sangyo.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.contentArticleCategory .category-wakuseiKotoura h2 {
+  background-image: url(../images/nav_icon_wakusei.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.contentArticleCategory .category h2 a {
+  color: #333;
+  text-decoration: none;
+}
+.contentArticleCategory .category .children {
+  /* margin: 0 10px 0 180px; */
+  padding: 0px 20px;
+  overflow: hidden;
+  margin-left: 190px;
+}
+.contentArticleCategory .category .children div {
+  display: inline;
+  padding-right: 1em;
+}
+.contentArticleCategory .categoryFukushi,
+.contentArticleCategory .categoryKyoikubunka,
+.contentArticleCategory .categoryKanko,
+.contentArticleCategory .categorySangyoshigoto,
+.contentArticleCategory .categoryGyoseimachizukuri,
+.contentArticleCategory .categoryBosaigai {
+  /* clear: both; */
+}
+
+.contentArticleCategory .category .children div a {
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+.contentArticleCategory .category .children div a:hover {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+h3 {
+  /* background-color: #e3f0fa; */
+  /* margin-bottom: 10px;
+  padding: 5px 5px 4px 15px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 150%;
+  
+  border: 1px solid #ccc;
+  background: #f8f8f8; */
+  /* background: #e5f8f2; */
+  background: #f8f8f8;
+  padding: 0.25em;
+}
+.more {
+  padding: 0 5px 10px 0;
+  text-align: right;
+}
+
+.more a {
+  position: relative;
+  padding-left: 0.8em;
+}
+
+.more a:before {
+  /* position: absolute;
+	top: 50%;
+	left: 0;
+	
+	display: block;
+	
+	width: 5px;
+	height: 5px;
+	content: '';
+	transition: all .2s ease-in-out;
+	-webkit-transform: translate(0, -50%) rotate(45deg);
+	   -moz-transform: translate(0, -50%) rotate(45deg);
+		-ms-transform: translate(0, -50%) rotate(45deg);
+		 -o-transform: translate(0, -50%) rotate(45deg);
+			transform: translate(0, -50%) rotate(45deg);
+	
+	border-top: 1px solid #00b4e5;
+	border-right: 1px solid #00b4e5;
+	
+	background: none; */
+}
+
+/* RSS Atom
+----------------------------------------------- */
+.feed {
+  position: relative;
+  float: right;
+  margin-top: -3.5em;
+}
+.feed a.feedRss {
+  /* width: 40px; */
+  /* height: 0; */
+  /* vertical-align: middle; */
+  overflow: hidden;
+  margin-left: 15px;
+  /* padding-top: 13px; */
+  /* background-image: url(./images/bt-rss.gif);
+  background-repeat: no-repeat; */
+
+  background: #f26e2e;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+
+  padding: 0 1em;
+  font-size: 12px;
+}
+.feed a.feedAtom {
+  /*  width: 45px; */
+  /* height: 0; */
+  /* vertical-align: middle; */
+  overflow: hidden;
+  /* margin-left: 5px;
+  padding-top: 13px; */
+  /* background-image: url(./images/bt-atom.gif);
+  background-repeat: no-repeat; */
+
+  background: #f26e2e;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+
+  padding: 0 1em;
+  font-size: 12px;
+}
+
+#docTabPortal .links .more,
+.links .more {
+  padding: 10px 20px 10px 10px;
+  text-align: right;
+}
+
+#docTabPortal .links .more a,
+.links .more a {
+  position: relative;
+  padding-left: 0.8em;
+}
+
+#docTabPortal .links .more a:before,
+.links .more a:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: block;
+
+  width: 5px;
+  height: 5px;
+  content: "";
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translate(0, -50%) rotate(45deg);
+  transform: translate(0, -50%) rotate(45deg);
+
+  border-top: 1px solid #00b4e5;
+  border-right: 1px solid #00b4e5;
+
+  background: none;
+}
+
+#docTabPortal .links .more a,
+#docTab .links .more a {
+  /* overflow: hidden; */
+}
+
+/* pagination
+----------------------------------------------- */
+.pagination {
+  text-align: center;
+}
+.pagination a {
+  padding: 0 6px;
+}
+.pagination span.current {
+  padding: 0 3px;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 分 野 の リ ス ト */
+
+.bunya-list {
+  /* width: calc(100% - 2%); */
+}
+
+.bunya-list div.list-wrap {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.bunya-list.kurashi div.list-wrap {
+  border: 2px solid #9ace41;
+}
+.bunya-list.kosodateManabi div.list-wrap {
+  border: 2px solid #fbbea2;
+}
+.bunya-list.fukushi div.list-wrap {
+  border: 2px solid #ea888c;
+}
+.bunya-list.kanko div.list-wrap {
+  border: 2px solid #6eb4de;
+}
+.bunya-list.iju div.list-wrap {
+  border: 2px solid #fdb32b;
+}
+.bunya-list.sangyo div.list-wrap {
+  border: 2px solid #d0a6d1;
+}
+.bunya-list.wakuseiKotoura div.list-wrap {
+  border: 2px solid #428ed9;
+}
+
+.bunya-list div.list-wrap:nth-child(3n) {
+  margin-right: 0;
+}
+
+.bunya-list div.list-wrap div.list-title {
+  font-size: 16px;
+  /* background: #9ace41; */
+  /* color: #fff; */
+  color: #333;
+  padding: 0.25em;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+  border-bottom: 2px dotted #ccc;
+}
+
+.bunya-list.kurashi div.list-wrap div.list-title {
+  background: #f5faec;
+}
+.bunya-list.kosodateManabi div.list-wrap div.list-title {
+  background: #fff9f6;
+}
+.bunya-list.fukushi div.list-wrap div.list-title {
+  background: #fdf3f3;
+}
+.bunya-list.kanko div.list-wrap div.list-title {
+  background: #f0f7fc;
+}
+.bunya-list.iju div.list-wrap div.list-title {
+  background: #fff7e9;
+}
+.bunya-list.sangyo div.list-wrap div.list-title {
+  background: #faf6fa;
+}
+.bunya-list.wakuseiKotoura div.list-wrap div.list-title {
+  background: #e9f4f8;
+}
+
+.bunya-list div.list-wrap ul li {
+}
+
+.bunya-list div.list-wrap ul li a {
+  position: relative;
+  padding-left: 1.25em;
+  display: block;
+  border-bottom: 2px dotted #ccc;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  text-decoration: underline;
+}
+
+.bunya-list div.list-wrap ul li a:hover {
+  text-decoration: none;
+}
+
+.bunya-list div.list-wrap ul li a:before {
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+
+  display: block;
+
+  width: 5px;
+  height: 5px;
+  content: "";
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+
+  z-index: 1;
+}
+
+.bunya-list div.list-wrap ul li a:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  /* background:  #01bf81; */
+  border-radius: 1000px;
+  z-index: 0;
+}
+
+.bunya-list.kurashi div.list-wrap ul li a:after {
+  background: #9ace41;
+}
+.bunya-list.kosodateManabi div.list-wrap ul li a:after {
+  background: #fbbea2;
+}
+.bunya-list.fukushi div.list-wrap ul li a:after {
+  background: #ea888c;
+}
+.bunya-list.kanko div.list-wrap ul li a:after {
+  background: #6eb4de;
+}
+.bunya-list.iju div.list-wrap ul li a:after {
+  background: #fdb32b;
+}
+.bunya-list.sangyo div.list-wrap ul li a:after {
+  background: #d0a6d1;
+}
+.bunya-list.wakuseiKotoura div.list-wrap ul li a:after {
+  background: #428ed9;
+}
+
+/* 町民の声 制度の概要 */
+
+body#page-bunya-tyouminKoe-index div.introduction {
+  padding: 1em;
+  /* border: 4px dotted #f0f0f0; */
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction h2 {
+  border-bottom: 4px dotted #ccc;
+  font-size: 24px;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  /* margin-bottom: 1em;
+    padding: 0.5em; */
+}
+
+body#page-bunya-tyouminKoe-index div.introduction p {
+  padding: 0.5em 0;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction ul {
+  margin: 10px 0 20px;
+  padding: 0;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction ul li {
+  margin: 0;
+  padding: 0 0 0 15px;
+  position: relative;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction ul li::before {
+  background: #01bf81;
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 0;
+  margin-right: 0.5em;
+  position: absolute;
+  top: 0.5em;
+  width: 8px;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction div.link {
+  text-align: center;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction div.link a::before {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 1.5em;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: all 0.2s ease-in-out 0s;
+  width: 5px;
+  z-index: 1;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction div.link a::after {
+  background: #01bf81 none repeat scroll 0 0;
+  border-radius: 1000px;
+  content: "";
+  display: block;
+  height: 1em;
+  left: 1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 1em;
+  z-index: 0;
+}
+
+body#page-bunya-tyouminKoe-index div.introduction div.link a {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1em 1.25em 1em 2.25em;
+  position: relative;
+  /* max-width: 180px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* addition */
+div#koteiKurashiSyoumeiSyutoku,
+div#koteiKurashiTenkyo,
+div#koteiKurashiNakunararetatoki,
+div#koteiKurashiKoseki,
+div#koteiKurashiMyNumber,
+div#koteiKurashiGomi,
+div#koteiKurashiAnimalPet,
+div#koteiKurashiKankyou,
+div#koteiKurashiBoti,
+div#koteiKurashiTyouei,
+div#koteiKurashiJougesuidou,
+div#koteiKurashiKyoukyoukoutu,
+div#koteiKurashiHazaDo,
+div#koteiKurashiHigoro,
+div#koteiKurashiTcc,
+div#koteiKurashiSyusyokushien,
+div#koteiKosodateManabiNinnshingawakattara,
+div#koteiKosodateManabiAkatyangaumaretara,
+div#koteiKosodateManabiNinnshinsyussann,
+div#koteiKosodateManabiHoikuenKodomoen,
+div#koteiKosodateManabiKosodateshien,
+div#koteiKosodateManabiKosodatesoudan,
+div#koteiKosodateManabiKennshinnYobou,
+div#koteiKosodateManabiKyouikuiinkai,
+div#koteiKosodateManabiKakusyuteate,
+div#koteiFukushiKonnkyu,
+div#koteiFukushiZidouiin,
+div#koteiGyoseimachizukuriZaiSei,
+div#koteiKurashiVisitor,
+div#koteiKurashiToshikeikaku,
+div#koteiKurashiTukoKisei,
+div#koteiKurashiDouroTyosa,
+div#koteiKurashiJuminzei,
+div#koteiKurashiKoteisisanzei,
+div#koteiKurashiKeizijousyazei,
+div#koteiKurashiKenkouhoken,
+div#koteiKurashiKaigohoken,
+div#koteiKurashiKoukikourei,
+div#koteiKurashiNouzei,
+div#koteiKurashiKobai,
+div#koteiKurashiKokumin,
+div#koteiKurashiKeihou,
+div#koteiKurashiKoutusaigai,
+div#koteiKurashiBousaimusenki,
+div#koteiKurashiSyusyokushien,
+div#koteiKurashiKigyoushien,
+div#koteiKurashiHellowork,
+div#koteiKosodateManabiHoukagozidou,
+div#koteiKosodateManabiShogakuTyugaku,
+div#koteiKosodateManabiKoukoukannren,
+div#koteiKosodateManabiSports,
+div#koteiKosodateManabiTyuugakuseiijou,
+div#koteiFukushiKenkoudukuri,
+div#koteiFukushiKaigoyobou,
+div#koteiFukushiKokuhotoKouki,
+div#koteiFukushiKakusyugankenshin,
+div#koteiFukushiKyukan,
+div#koteiFukushiJoseiseido,
+div#koteiFukushiTiiki,
+div#koteiFukushiKoureisyaseikatu,
+div#koteiFukushiSoudanseido,
+div#koteiFukushiKakusyuseido,
+div#koteiFukushiSoudanmadoguti,
+div#koteiFukushiHogo,
+div#koteiKankoShisetuNews,
+div#koteiKankoBunnkazai,
+div#koteiKankoKotourakai,
+div#koteiGyoseimachizukuriSisetsu,
+div#koteiGyoseimachizukuriToukei,
+div#koteiGyoseimachizukuriFurusatoNozei,
+div#koteiGyoseimachizukuriKouhou,
+div#koteiGyoseimachizukuriKoutyou,
+div#koteiGyoseimachizukuriJouhokokai,
+div#koteiGyoseimachizukuriKozinjohohogo,
+div#koteiGyoseimachizukuriSyokogyou,
+div#koteiGyoseimachizukuriNorinsuisan,
+div#koteiGyoseimachizukuriNyusatukeiyaku,
+div#hogehoge {
+  margin-bottom: 20px;
+}
+
+div#koteiKurashiSyoumeiSyutoku h2,
+div#koteiKurashiTenkyo h2,
+div#koteiKurashiNakunararetatoki h2,
+div#koteiKurashiKoseki h2,
+div#koteiKurashiMyNumber h2,
+div#koteiKurashiGomi h2,
+div#koteiKurashiAnimalPet h2,
+div#koteiKurashiKankyou h2,
+div#koteiKurashiBoti h2,
+div#koteiKurashiTyouei h2,
+div#koteiKurashiJougesuidou h2,
+div#koteiKurashiKyoukyoukoutu h2,
+div#koteiKurashiHazaDo h2,
+div#koteiKurashiHigoro h2,
+div#koteiKurashiTcc h2,
+div#koteiKurashiSyusyokushien h2,
+div#koteiKosodateManabiNinnshingawakattara h2,
+div#koteiKosodateManabiAkatyangaumaretara h2,
+div#koteiKosodateManabiNinnshinsyussann h2,
+div#koteiKosodateManabiHoikuenKodomoen h2,
+div#koteiKosodateManabiKosodateshien h2,
+div#koteiKosodateManabiKosodatesoudan h2,
+div#koteiKosodateManabiKennshinnYobou h2,
+div#koteiKosodateManabiKyouikuiinkai h2,
+div#koteiKosodateManabiKakusyuteate h2,
+div#koteiFukushiKonnkyu h2,
+div#koteiFukushiZidouiin h2,
+div#koteiGyoseimachizukuriZaiSei h2,
+div#koteiKurashiVisitor h2,
+div#koteiKurashiToshikeikaku h2,
+div#koteiKurashiTukoKisei h2,
+div#koteiKurashiDouroTyosa h2,
+div#koteiKurashiJuminzei h2,
+div#koteiKurashiKoteisisanzei h2,
+div#koteiKurashiKeizijousyazei h2,
+div#koteiKurashiKenkouhoken h2,
+div#koteiKurashiKaigohoken h2,
+div#koteiKurashiKoukikourei h2,
+div#koteiKurashiNouzei h2,
+div#koteiKurashiKobai h2,
+div#koteiKurashiKokumin h2,
+div#koteiKurashiKeihou h2,
+div#koteiKurashiKoutusaigai h2,
+div#koteiKurashiBousaimusenki h2,
+div#koteiKurashiSyusyokushien h2,
+div#koteiKurashiKigyoushien h2,
+div#koteiKurashiHellowork h2,
+div#koteiKosodateManabiHoukagozidou h2,
+div#koteiKosodateManabiShogakuTyugaku h2,
+div#koteiKosodateManabiKoukoukannren h2,
+div#koteiKosodateManabiSports h2,
+div#koteiKosodateManabiTyuugakuseiijou h2,
+div#koteiFukushiKenkoudukuri h2,
+div#koteiFukushiKaigoyobou h2,
+div#koteiFukushiKokuhotoKouki h2,
+div#koteiFukushiKakusyugankenshin h2,
+div#koteiFukushiKyukan h2,
+div#koteiFukushiJoseiseido h2,
+div#koteiFukushiTiiki h2,
+div#koteiFukushiKoureisyaseikatu h2,
+div#koteiFukushiSoudanseido h2,
+div#koteiFukushiKakusyuseido h2,
+div#koteiFukushiSoudanmadoguti h2,
+div#koteiFukushiHogo h2,
+div#koteiKankoShisetuNews h2,
+div#koteiKankoBunnkazai h2,
+div#koteiKankoKotourakai h2,
+div#koteiGyoseimachizukuriSisetsu h2,
+div#koteiGyoseimachizukuriToukei h2,
+div#koteiGyoseimachizukuriFurusatoNozei h2,
+div#koteiGyoseimachizukuriKouhou h2,
+div#koteiGyoseimachizukuriKoutyou h2,
+div#koteiGyoseimachizukuriJouhokokai h2,
+div#koteiGyoseimachizukuriKozinjohohogo h2,
+div#koteiGyoseimachizukuriSyokogyou h2,
+div#koteiGyoseimachizukuriNorinsuisan h2,
+div#koteiGyoseimachizukuriNyusatukeiyaku h2,
+div#hogehoge h2 {
+  border-bottom: 2px solid #01bf81;
+  font-size: 21px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+div#koteiKurashiSyoumeiSyutoku ul,
+div#koteiKurashiTenkyo ul,
+div#koteiKurashiNakunararetatoki ul,
+div#koteiKurashiKoseki ul,
+div#koteiKurashiMyNumber ul,
+div#koteiKurashiGomi ul,
+div#koteiKurashiAnimalPet ul,
+div#koteiKurashiKankyou ul,
+div#koteiKurashiBoti ul,
+div#koteiKurashiTyouei ul,
+div#koteiKurashiJougesuidou ul,
+div#koteiKurashiKyoukyoukoutu ul,
+div#koteiKurashiHazaDo ul,
+div#koteiKurashiHigoro ul,
+div#koteiKurashiTcc ul,
+div#koteiKurashiSyusyokushien ul,
+div#koteiKosodateManabiNinnshingawakattara ul,
+div#koteiKosodateManabiAkatyangaumaretara ul,
+div#koteiKosodateManabiNinnshinsyussann ul,
+div#koteiKosodateManabiHoikuenKodomoen ul,
+div#koteiKosodateManabiKosodateshien ul,
+div#koteiKosodateManabiKosodatesoudan ul,
+div#koteiKosodateManabiKennshinnYobou ul,
+div#koteiKosodateManabiKyouikuiinkai ul,
+div#koteiKosodateManabiKakusyuteate ul,
+div#koteiFukushiKonnkyu ul,
+div#koteiFukushiZidouiin ul,
+div#koteiGyoseimachizukuriZaiSei ul,
+div#koteiKurashiVisitor ul,
+div#koteiKurashiToshikeikaku ul,
+div#koteiKurashiTukoKisei ul,
+div#koteiKurashiDouroTyosa ul,
+div#koteiKurashiJuminzei ul,
+div#koteiKurashiKoteisisanzei ul,
+div#koteiKurashiKeizijousyazei ul,
+div#koteiKurashiKenkouhoken ul,
+div#koteiKurashiKaigohoken ul,
+div#koteiKurashiKoukikourei ul,
+div#koteiKurashiNouzei ul,
+div#koteiKurashiKobai ul,
+div#koteiKurashiKokumin ul,
+div#koteiKurashiKeihou ul,
+div#koteiKurashiKoutusaigai ul,
+div#koteiKurashiBousaimusenki ul,
+div#koteiKurashiSyusyokushien ul,
+div#koteiKurashiKigyoushien ul,
+div#koteiKurashiHellowork ul,
+div#koteiKosodateManabiHoukagozidou ul,
+div#koteiKosodateManabiShogakuTyugaku ul,
+div#koteiKosodateManabiKoukoukannren ul,
+div#koteiKosodateManabiSports ul,
+div#koteiKosodateManabiTyuugakuseiijou ul,
+div#koteiFukushiKenkoudukuri ul,
+div#koteiFukushiKaigoyobou ul,
+div#koteiFukushiKokuhotoKouki ul,
+div#koteiFukushiKakusyugankenshin ul,
+div#koteiFukushiKyukan ul,
+div#koteiFukushiJoseiseido ul,
+div#koteiFukushiTiiki ul,
+div#koteiFukushiKoureisyaseikatu ul,
+div#koteiFukushiSoudanseido ul,
+div#koteiFukushiKakusyuseido ul,
+div#koteiFukushiSoudanmadoguti ul,
+div#koteiFukushiHogo ul,
+div#koteiKankoShisetuNews ul,
+div#koteiKankoBunnkazai ul,
+div#koteiKankoKotourakai ul,
+div#koteiGyoseimachizukuriSisetsu ul,
+div#koteiGyoseimachizukuriToukei ul,
+div#koteiGyoseimachizukuriFurusatoNozei ul,
+div#koteiGyoseimachizukuriKouhou ul,
+div#koteiGyoseimachizukuriKoutyou ul,
+div#koteiGyoseimachizukuriJouhokokai ul,
+div#koteiGyoseimachizukuriKozinjohohogo ul,
+div#koteiGyoseimachizukuriSyokogyou ul,
+div#koteiGyoseimachizukuriNorinsuisan ul,
+div#koteiGyoseimachizukuriNyusatukeiyaku ul,
+div#hogehoge ul {
+  padding: 0 20px 0 15px;
+}
+div#koteiKurashiSyoumeiSyutoku li,
+div#koteiKurashiTenkyo li,
+div#koteiKurashiNakunararetatoki li,
+div#koteiKurashiKoseki li,
+div#koteiKurashiMyNumber li,
+div#koteiKurashiGomi li,
+div#koteiKurashiAnimalPet li,
+div#koteiKurashiKankyou li,
+div#koteiKurashiBoti li,
+div#koteiKurashiTyouei li,
+div#koteiKurashiJougesuidou li,
+div#koteiKurashiKyoukyoukoutu li,
+div#koteiKurashiHazaDo li,
+div#koteiKurashiHigoro li,
+div#koteiKurashiTcc li,
+div#koteiKurashiSyusyokushien li,
+div#koteiKosodateManabiNinnshingawakattara li,
+div#koteiKosodateManabiAkatyangaumaretara li,
+div#koteiKosodateManabiNinnshinsyussann li,
+div#koteiKosodateManabiHoikuenKodomoen li,
+div#koteiKosodateManabiKosodateshien li,
+div#koteiKosodateManabiKosodatesoudan li,
+div#koteiKosodateManabiKennshinnYobou li,
+div#koteiKosodateManabiKyouikuiinkai li,
+div#koteiKosodateManabiKakusyuteate li,
+div#koteiFukushiKonnkyu li,
+div#koteiFukushiZidouiin li,
+div#koteiGyoseimachizukuriZaiSei li,
+div#koteiKurashiVisitor li,
+div#koteiKurashiToshikeikaku li,
+div#koteiKurashiTukoKisei li,
+div#koteiKurashiDouroTyosa li,
+div#koteiKurashiJuminzei li,
+div#koteiKurashiKoteisisanzei li,
+div#koteiKurashiKeizijousyazei li,
+div#koteiKurashiKenkouhoken li,
+div#koteiKurashiKaigohoken li,
+div#koteiKurashiKoukikourei li,
+div#koteiKurashiNouzei li,
+div#koteiKurashiKobai li,
+div#koteiKurashiKokumin li,
+div#koteiKurashiKeihou li,
+div#koteiKurashiKoutusaigai li,
+div#koteiKurashiBousaimusenki li,
+div#koteiKurashiSyusyokushien li,
+div#koteiKurashiKigyoushien li,
+div#koteiKurashiHellowork li,
+div#koteiKosodateManabiHoukagozidou li,
+div#koteiKosodateManabiShogakuTyugaku li,
+div#koteiKosodateManabiKoukoukannren li,
+div#koteiKosodateManabiSports li,
+div#koteiKosodateManabiTyuugakuseiijou li,
+div#koteiFukushiKenkoudukuri li,
+div#koteiFukushiKaigoyobou li,
+div#koteiFukushiKokuhotoKouki li,
+div#koteiFukushiKakusyugankenshin li,
+div#koteiFukushiKyukan li,
+div#koteiFukushiJoseiseido li,
+div#koteiFukushiTiiki li,
+div#koteiFukushiKoureisyaseikatu li,
+div#koteiFukushiSoudanseido li,
+div#koteiFukushiKakusyuseido li,
+div#koteiFukushiSoudanmadoguti li,
+div#koteiFukushiHogo li,
+div#koteiKankoShisetuNews li,
+div#koteiKankoBunnkazai li,
+div#koteiKankoKotourakai li,
+div#koteiGyoseimachizukuriSisetsu li,
+div#koteiGyoseimachizukuriToukei li,
+div#koteiGyoseimachizukuriFurusatoNozei li,
+div#koteiGyoseimachizukuriKouhou li,
+div#koteiGyoseimachizukuriKoutyou li,
+div#koteiGyoseimachizukuriJouhokokai li,
+div#koteiGyoseimachizukuriKozinjohohogo li,
+div#koteiGyoseimachizukuriSyokogyou li,
+div#koteiGyoseimachizukuriNorinsuisan li,
+div#koteiGyoseimachizukuriNyusatukeiyaku li,
+div#hogehoge li {
+  border-bottom: 2px dotted #ccc;
+  line-height: 1.5;
+  margin: 8px 0 0;
+  padding-bottom: 0.5em;
+  padding-left: 1.25em;
+  padding-top: 0.5em;
+  position: relative;
+}
+div#koteiKurashiSyoumeiSyutoku li a,
+div#koteiKurashiTenkyo li a,
+div#koteiKurashiNakunararetatoki li a,
+div#koteiKurashiKoseki li a,
+div#koteiKurashiMyNumber li a,
+div#koteiKurashiGomi li a,
+div#koteiKurashiAnimalPet li a,
+div#koteiKurashiKankyou li a,
+div#koteiKurashiBoti li a,
+div#koteiKurashiTyouei li a,
+div#koteiKurashiJougesuidou li a,
+div#koteiKurashiKyoukyoukoutu li a,
+div#koteiKurashiHazaDo li a,
+div#koteiKurashiHigoro li a,
+div#koteiKurashiTcc li a,
+div#koteiKurashiSyusyokushien li a,
+div#koteiKosodateManabiNinnshingawakattara li a,
+div#koteiKosodateManabiAkatyangaumaretara li a,
+div#koteiKosodateManabiNinnshinsyussann li a,
+div#koteiKosodateManabiHoikuenKodomoen li a,
+div#koteiKosodateManabiKosodateshien li a,
+div#koteiKosodateManabiKosodatesoudan li a,
+div#koteiKosodateManabiKennshinnYobou li a,
+div#koteiKosodateManabiKyouikuiinkai li a,
+div#koteiKosodateManabiKakusyuteate li a,
+div#koteiFukushiKonnkyu li a,
+div#koteiFukushiZidouiin li a,
+div#koteiGyoseimachizukuriZaiSei li a,
+div#koteiKurashiVisitor li a,
+div#koteiKurashiToshikeikaku li a,
+div#koteiKurashiTukoKisei li a,
+div#koteiKurashiDouroTyosa li a,
+div#koteiKurashiJuminzei li a,
+div#koteiKurashiKoteisisanzei li a,
+div#koteiKurashiKeizijousyazei li a,
+div#koteiKurashiKenkouhoken li a,
+div#koteiKurashiKaigohoken li a,
+div#koteiKurashiKoukikourei li a,
+div#koteiKurashiNouzei li a,
+div#koteiKurashiKobai li a,
+div#koteiKurashiKokumin li a,
+div#koteiKurashiKeihou li a,
+div#koteiKurashiKoutusaigai li a,
+div#koteiKurashiBousaimusenki li a,
+div#koteiKurashiSyusyokushien li a,
+div#koteiKurashiKigyoushien li a,
+div#koteiKurashiHellowork li a,
+div#koteiKosodateManabiHoukagozidou li a,
+div#koteiKosodateManabiShogakuTyugaku li a,
+div#koteiKosodateManabiKoukoukannren li a,
+div#koteiKosodateManabiSports li a,
+div#koteiKosodateManabiTyuugakuseiijou li a,
+div#koteiFukushiKenkoudukuri li a,
+div#koteiFukushiKaigoyobou li a,
+div#koteiFukushiKokuhotoKouki li a,
+div#koteiFukushiKakusyugankenshin li a,
+div#koteiFukushiKyukan li a,
+div#koteiFukushiJoseiseido li a,
+div#koteiFukushiTiiki li a,
+div#koteiFukushiKoureisyaseikatu li a,
+div#koteiFukushiSoudanseido li a,
+div#koteiFukushiKakusyuseido li a,
+div#koteiFukushiSoudanmadoguti li a,
+div#koteiFukushiHogo li a,
+div#koteiKankoShisetuNews li a,
+div#koteiKankoBunnkazai li a,
+div#koteiKankoKotourakai li a,
+div#koteiGyoseimachizukuriSisetsu li a,
+div#koteiGyoseimachizukuriToukei li a,
+div#koteiGyoseimachizukuriFurusatoNozei li a,
+div#koteiGyoseimachizukuriKouhou li a,
+div#koteiGyoseimachizukuriKoutyou li a,
+div#koteiGyoseimachizukuriJouhokokai li a,
+div#koteiGyoseimachizukuriKozinjohohogo li a,
+div#koteiGyoseimachizukuriSyokogyou li a,
+div#koteiGyoseimachizukuriNorinsuisan li a,
+div#koteiGyoseimachizukuriNyusatukeiyaku li a,
+div#hogehoge li a {
+  color: #333;
+  text-decoration: underline;
+}
+div#koteiKurashiSyoumeiSyutoku li a:hover,
+div#koteiKurashiTenkyo li a:hover,
+div#koteiKurashiNakunararetatoki li a:hover,
+div#koteiKurashiKoseki li a:hover,
+div#koteiKurashiMyNumber li a:hover,
+div#koteiKurashiGomi li a:hover,
+div#koteiKurashiAnimalPet li a:hover,
+div#koteiKurashiKankyou li a:hover,
+div#koteiKurashiBoti li a:hover,
+div#koteiKurashiTyouei li a:hover,
+div#koteiKurashiJougesuidou li a:hover,
+div#koteiKurashiKyoukyoukoutu li a:hover,
+div#koteiKurashiHazaDo li a:hover,
+div#koteiKurashiHigoro li a:hover,
+div#koteiKurashiTcc li a:hover,
+div#koteiKurashiSyusyokushien li a:hover,
+div#koteiKosodateManabiNinnshingawakattara li a:hover,
+div#koteiKosodateManabiAkatyangaumaretara li a:hover,
+div#koteiKosodateManabiNinnshinsyussann li a:hover,
+div#koteiKosodateManabiHoikuenKodomoen li a:hover,
+div#koteiKosodateManabiKosodateshien li a:hover,
+div#koteiKosodateManabiKosodatesoudan li a:hover,
+div#koteiKosodateManabiKennshinnYobou li a:hover,
+div#koteiKosodateManabiKyouikuiinkai li a:hover,
+div#koteiKosodateManabiKakusyuteate li a:hover,
+div#koteiFukushiKonnkyu li a:hover,
+div#koteiFukushiZidouiin li a:hover,
+div#koteiGyoseimachizukuriZaiSei li a:hover,
+div#koteiKurashiVisitor li a:hover,
+div#koteiKurashiToshikeikaku li a:hover,
+div#koteiKurashiTukoKisei li a:hover,
+div#koteiKurashiDouroTyosa li a:hover,
+div#koteiKurashiJuminzei li a:hover,
+div#koteiKurashiKoteisisanzei li a:hover,
+div#koteiKurashiKeizijousyazei li a:hover,
+div#koteiKurashiKenkouhoken li a:hover,
+div#koteiKurashiKaigohoken li a:hover,
+div#koteiKurashiKoukikourei li a:hover,
+div#koteiKurashiNouzei li a:hover,
+div#koteiKurashiKobai li a:hover,
+div#koteiKurashiKokumin li a:hover,
+div#koteiKurashiKeihou li a:hover,
+div#koteiKurashiKoutusaigai li a:hover,
+div#koteiKurashiBousaimusenki li a:hover,
+div#koteiKurashiSyusyokushien li a:hover,
+div#koteiKurashiKigyoushien li a:hover,
+div#koteiKurashiHellowork li a:hover,
+div#koteiKosodateManabiHoukagozidou li a:hover,
+div#koteiKosodateManabiShogakuTyugaku li a:hover,
+div#koteiKosodateManabiKoukoukannren li a:hover,
+div#koteiKosodateManabiSports li a:hover,
+div#koteiKosodateManabiTyuugakuseiijou li a:hover,
+div#koteiFukushiKenkoudukuri li a:hover,
+div#koteiFukushiKaigoyobou li a:hover,
+div#koteiFukushiKokuhotoKouki li a:hover,
+div#koteiFukushiKakusyugankenshin li a:hover,
+div#koteiFukushiKyukan li a:hover,
+div#koteiFukushiJoseiseido li a:hover,
+div#koteiFukushiTiiki li a:hover,
+div#koteiFukushiKoureisyaseikatu li a:hover,
+div#koteiFukushiSoudanseido li a:hover,
+div#koteiFukushiKakusyuseido li a:hover,
+div#koteiFukushiSoudanmadoguti li a:hover,
+div#koteiFukushiHogo li a:hover,
+div#koteiKankoShisetuNews li a:hover,
+div#koteiKankoBunnkazai li a:hover,
+div#koteiKankoKotourakai li a:hover,
+div#koteiGyoseimachizukuriSisetsu li a:hover,
+div#koteiGyoseimachizukuriToukei li a:hover,
+div#koteiGyoseimachizukuriFurusatoNozei li a:hover,
+div#koteiGyoseimachizukuriKouhou li a:hover,
+div#koteiGyoseimachizukuriKoutyou li a:hover,
+div#koteiGyoseimachizukuriJouhokokai li a:hover,
+div#koteiGyoseimachizukuriKozinjohohogo li a:hover,
+div#koteiGyoseimachizukuriSyokogyou li a:hover,
+div#koteiGyoseimachizukuriNorinsuisan li a:hover,
+div#koteiGyoseimachizukuriNyusatukeiyaku li a:hover,
+div#hogehoge li a:hover {
+  text-decoration: none;
+}
+div#koteiKurashiSyoumeiSyutoku li::before,
+div#koteiKurashiTenkyo li::before,
+div#koteiKurashiNakunararetatoki li::before,
+div#koteiKurashiKoseki li::before,
+div#koteiKurashiMyNumber li::before,
+div#koteiKurashiGomi li::before,
+div#koteiKurashiAnimalPet li::before,
+div#koteiKurashiKankyou li::before,
+div#koteiKurashiBoti li::before,
+div#koteiKurashiTyouei li::before,
+div#koteiKurashiJougesuidou li::before,
+div#koteiKurashiKyoukyoukoutu li::before,
+div#koteiKurashiHazaDo li::before,
+div#koteiKurashiHigoro li::before,
+div#koteiKurashiTcc li::before,
+div#koteiKurashiSyusyokushien li::before,
+div#koteiKosodateManabiNinnshingawakattara li::before,
+div#koteiKosodateManabiAkatyangaumaretara li::before,
+div#koteiKosodateManabiNinnshinsyussann li::before,
+div#koteiKosodateManabiHoikuenKodomoen li::before,
+div#koteiKosodateManabiKosodateshien li::before,
+div#koteiKosodateManabiKosodatesoudan li::before,
+div#koteiKosodateManabiKennshinnYobou li::before,
+div#koteiKosodateManabiKyouikuiinkai li::before,
+div#koteiKosodateManabiKakusyuteate li::before,
+div#koteiFukushiKonnkyu li::before,
+div#koteiFukushiZidouiin li::before,
+div#koteiGyoseimachizukuriZaiSei li::before,
+div#koteiKurashiVisitor li::before,
+div#koteiKurashiToshikeikaku li::before,
+div#koteiKurashiTukoKisei li::before,
+div#koteiKurashiDouroTyosa li::before,
+div#koteiKurashiJuminzei li::before,
+div#koteiKurashiKoteisisanzei li::before,
+div#koteiKurashiKeizijousyazei li::before,
+div#koteiKurashiKenkouhoken li::before,
+div#koteiKurashiKaigohoken li::before,
+div#koteiKurashiKoukikourei li::before,
+div#koteiKurashiNouzei li::before,
+div#koteiKurashiKobai li::before,
+div#koteiKurashiKokumin li::before,
+div#koteiKurashiKeihou li::before,
+div#koteiKurashiKoutusaigai li::before,
+div#koteiKurashiBousaimusenki li::before,
+div#koteiKurashiSyusyokushien li::before,
+div#koteiKurashiKigyoushien li::before,
+div#koteiKurashiHellowork li::before,
+div#koteiKosodateManabiHoukagozidou li::before,
+div#koteiKosodateManabiShogakuTyugaku li::before,
+div#koteiKosodateManabiKoukoukannren li::before,
+div#koteiKosodateManabiSports li::before,
+div#koteiKosodateManabiTyuugakuseiijou li::before,
+div#koteiFukushiKenkoudukuri li::before,
+div#koteiFukushiKaigoyobou li::before,
+div#koteiFukushiKokuhotoKouki li::before,
+div#koteiFukushiKakusyugankenshin li::before,
+div#koteiFukushiKyukan li::before,
+div#koteiFukushiJoseiseido li::before,
+div#koteiFukushiTiiki li::before,
+div#koteiFukushiKoureisyaseikatu li::before,
+div#koteiFukushiSoudanseido li::before,
+div#koteiFukushiKakusyuseido li::before,
+div#koteiFukushiSoudanmadoguti li::before,
+div#koteiFukushiHogo li::before,
+div#koteiKankoShisetuNews li::before,
+div#koteiKankoBunnkazai li::before,
+div#koteiKankoKotourakai li::before,
+div#koteiGyoseimachizukuriSisetsu li::before,
+div#koteiGyoseimachizukuriToukei li::before,
+div#koteiGyoseimachizukuriFurusatoNozei li::before,
+div#koteiGyoseimachizukuriKouhou li::before,
+div#koteiGyoseimachizukuriKoutyou li::before,
+div#koteiGyoseimachizukuriJouhokokai li::before,
+div#koteiGyoseimachizukuriKozinjohohogo li::before,
+div#koteiGyoseimachizukuriSyokogyou li::before,
+div#koteiGyoseimachizukuriNorinsuisan li::before,
+div#koteiGyoseimachizukuriNyusatukeiyaku li::before,
+div#hogehoge li::before {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0.5em;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: all 0.2s ease-in-out 0s;
+  width: 5px;
+  z-index: 1;
+}
+div#koteiKurashiSyoumeiSyutoku li::after,
+div#koteiKurashiTenkyo li::after,
+div#koteiKurashiNakunararetatoki li::after,
+div#koteiKurashiKoseki li::after,
+div#koteiKurashiMyNumber li::after,
+div#koteiKurashiGomi li::after,
+div#koteiKurashiAnimalPet li::after,
+div#koteiKurashiKankyou li::after,
+div#koteiKurashiBoti li::after,
+div#koteiKurashiTyouei li::after,
+div#koteiKurashiJougesuidou li::after,
+div#koteiKurashiKyoukyoukoutu li::after,
+div#koteiKurashiHazaDo li::after,
+div#koteiKurashiHigoro li::after,
+div#koteiKurashiTcc li::after,
+div#koteiKurashiSyusyokushien li::after,
+div#koteiKosodateManabiNinnshingawakattara li::after,
+div#koteiKosodateManabiAkatyangaumaretara li::after,
+div#koteiKosodateManabiNinnshinsyussann li::after,
+div#koteiKosodateManabiHoikuenKodomoen li::after,
+div#koteiKosodateManabiKosodateshien li::after,
+div#koteiKosodateManabiKosodatesoudan li::after,
+div#koteiKosodateManabiKennshinnYobou li::after,
+div#koteiKosodateManabiKyouikuiinkai li::after,
+div#koteiKosodateManabiKakusyuteate li::after,
+div#koteiFukushiKonnkyu li::after,
+div#koteiFukushiZidouiin li::after,
+div#koteiGyoseimachizukuriZaiSei li::after,
+div#koteiKurashiVisitor li::after,
+div#koteiKurashiToshikeikaku li::after,
+div#koteiKurashiTukoKisei li::after,
+div#koteiKurashiDouroTyosa li::after,
+div#koteiKurashiJuminzei li::after,
+div#koteiKurashiKoteisisanzei li::after,
+div#koteiKurashiKeizijousyazei li::after,
+div#koteiKurashiKenkouhoken li::after,
+div#koteiKurashiKaigohoken li::after,
+div#koteiKurashiKoukikourei li::after,
+div#koteiKurashiNouzei li::after,
+div#koteiKurashiKobai li::after,
+div#koteiKurashiKokumin li::after,
+div#koteiKurashiKeihou li::after,
+div#koteiKurashiKoutusaigai li::after,
+div#koteiKurashiBousaimusenki li::after,
+div#koteiKurashiSyusyokushien li::after,
+div#koteiKurashiKigyoushien li::after,
+div#koteiKurashiHellowork li::after,
+div#koteiKosodateManabiHoukagozidou li::after,
+div#koteiKosodateManabiShogakuTyugaku li::after,
+div#koteiKosodateManabiKoukoukannren li::after,
+div#koteiKosodateManabiSports li::after,
+div#koteiKosodateManabiTyuugakuseiijou li::after,
+div#koteiFukushiKenkoudukuri li::after,
+div#koteiFukushiKaigoyobou li::after,
+div#koteiFukushiKokuhotoKouki li::after,
+div#koteiFukushiKakusyugankenshin li::after,
+div#koteiFukushiKyukan li::after,
+div#koteiFukushiJoseiseido li::after,
+div#koteiFukushiTiiki li::after,
+div#koteiFukushiKoureisyaseikatu li::after,
+div#koteiFukushiSoudanseido li::after,
+div#koteiFukushiKakusyuseido li::after,
+div#koteiFukushiSoudanmadoguti li::after,
+div#koteiFukushiHogo li::after,
+div#koteiKankoShisetuNews li::after,
+div#koteiKankoBunnkazai li::after,
+div#koteiKankoKotourakai li::after,
+div#koteiGyoseimachizukuriSisetsu li::after,
+div#koteiGyoseimachizukuriToukei li::after,
+div#koteiGyoseimachizukuriFurusatoNozei li::after,
+div#koteiGyoseimachizukuriKouhou li::after,
+div#koteiGyoseimachizukuriKoutyou li::after,
+div#koteiGyoseimachizukuriJouhokokai li::after,
+div#koteiGyoseimachizukuriKozinjohohogo li::after,
+div#koteiGyoseimachizukuriSyokogyou li::after,
+div#koteiGyoseimachizukuriNorinsuisan li::after,
+div#koteiGyoseimachizukuriNyusatukeiyaku li::after,
+div#hogehoge li::after {
+  background: #01bf81;
+  border-radius: 1000px;
+  content: "";
+  display: block;
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 1em;
+  z-index: 0;
+}
