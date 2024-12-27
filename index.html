@@ -1,55 +1,285 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- document header -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>琴浦町GIS</title>
+
+    <!-- styling: this will remove. 
+     Getting from https://www.town.kotoura.tottori.jp/docs/2012122300034/ -->
+    <link
+      rel="stylesheet"
+      href="https://www.town.kotoura.tottori.jp/_common/themes/joruri/doc/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.town.kotoura.tottori.jp/_common/themes/joruri/base/layouts/col-1.css"
+    />
   </head>
   <body>
     <main>
-      <h1>琴浦町GIS</h1>
-      <div class="container">
-        <p class="description">
-          「築上町GIS」は、築上町が所有する地図関連情報をインターネット上に公開し、提供するサービスです。
-          パソコンやスマートフォン等からいつでも・どこでも閲覧できますので、是非ご活用ください。
-        </p>
-        <a href="#" class="link-style">
-          公開型GISユーザーマニュアル（PDF:421KB）
-        </a>
+      <!-- main same as town.kotoura.tottori.jp's styling -->
+      <div id="main">
+        <div id="wrapper">
+          <div id="content">
+            <div id="contentContainer">
+              <div id="contentBody">
+                <div class="contentArticleDoc">
+                  <!-- content header -->
+                  <div class="header">
+                    <h1>琴浦町GIS</h1>
+                    <div class="publishedAt">2024年12月27日</div>
+                  </div>
+                  <!-- content body -->
+                  <div class="body">
+                    <!-- 琴浦町GIS 概要 -->
+                    <p
+                      style="
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 100;
+                        font-family: 'ヒラギノ角ゴ Pro W3',
+                          'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                          'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                      "
+                    >
+                      <span style="font-size: large"
+                        ><strong style="font-size: 18px">
+                          「琴浦町GIS」は、琴浦町が所有する地図関連情報をインターネット上に公開し、提供するサービスです。
+                          パソコンやスマートフォン等からいつでも・どこでも閲覧できますので、是非ご活用ください。
+                        </strong></span
+                      >
+                    </p>
+                    <p style="font-size: 16px">&nbsp;&nbsp;</p>
+
+                    <!-- ご利用上の注意 -->
+                    <h3 class="deco-headline">
+                      ご利用上の注意（必ずお読みください）
+                    </h3>
+                    <ul>
+                      <li>
+                        本サービスは、すべての利用者の環境（パソコンやスマートフォン等）において正常に動作することを保証するものではありません。
+                      </li>
+                      <li>
+                        利用者が本サービスを利用することによって発生した損害や損失について、琴浦町は一切の責任を負いません。
+                      </li>
+                      <li>
+                        本サービスで提供する情報は、概略を示したものであり、正確な位置、範囲等を保証するものではありません。
+                      </li>
+                      <li>
+                        また、作成時期により現況を正確に反映していない場合があります。
+                      </li>
+                      <li>
+                        権利や義務の発生するものなどの重要な事項の情報は、必ず担当課にご確認ください。
+                      </li>
+                    </ul>
+                    <p style="font-size: 16px">&nbsp;&nbsp;</p>
+
+                    <!-- 設定されているマップ一覧 -->
+                    <h3 class="deco-headline">マップ一覧</h3>
+
+                    <!-- ハザードマップ -->
+                    <h5 class="deco-headline" style="margin-left: 20px">
+                      <a
+                        href="https://apps02.chklab.com/LG313718/ciel_public/?citycd=313718&ismapinfofromdb=true&mapindex=73260528"
+                        >ハザードマップ（外部リンク）</a
+                      >
+                    </h5>
+                    <details style="margin-left: 20px">
+                      <summary>マップの概要</summary>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・ハザードマップ（令和〇〇年〇〇月作成）に掲載している避難所・ハザードマップ・消火栓の情報を地図上に表しています。
+                      </p>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・担当部署：〇〇課〇〇
+                      </p>
+                    </details>
+
+                    <!-- 公有地財産マップ -->
+                    <h5 class="deco-headline" style="margin-left: 20px">
+                      <a href="#">公有地財産マップ（外部リンク）</a>
+                    </h5>
+                    <details style="margin-left: 20px">
+                      <summary>マップの概要</summary>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・未利用財産を含む公共施設（公有地、財産、建物等）の情報を地図上に表しています。
+                      </p>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・担当部署：〇〇課〇〇
+                      </p>
+                    </details>
+
+                    <!-- 都市計画マップ -->
+                    <h5 class="deco-headline" style="margin-left: 20px">
+                      <a href="#">都市計画マップ（外部リンク） </a>
+                    </h5>
+                    <details style="margin-left: 20px">
+                      <summary>マップの概要</summary>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・都市計画の情報を地図上に表しています。
+                      </p>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・担当部署：〇〇課〇〇
+                      </p>
+                    </details>
+
+                    <!-- インフラマップ -->
+                    <h5 class="deco-headline" style="margin-left: 20px">
+                      <a href="#">インフラマップ（外部リンク） </a>
+                    </h5>
+                    <details style="margin-left: 20px">
+                      <summary>マップの概要</summary>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・道路、水道、下水道などインフラの情報を地図上に表しています。
+                      </p>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・担当部署：〇〇課〇〇
+                      </p>
+                    </details>
+
+                    <!-- 農業マップ -->
+                    <h5 class="deco-headline" style="margin-left: 20px">
+                      <a href="#">農業マップ（外部リンク） </a>
+                    </h5>
+                    <details style="margin-left: 20px">
+                      <summary>マップの概要</summary>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・農道、農振区域等の農業に関連する情報を地図上に表しています。
+                      </p>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・担当部署：〇〇課〇〇
+                      </p>
+                    </details>
+
+                    <!-- 森林マップ -->
+                    <h5 class="deco-headline" style="margin-left: 20px">
+                      <a href="#">森林マップ（外部リンク） </a>
+                    </h5>
+                    <details style="margin-left: 20px">
+                      <summary>マップの概要</summary>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・林班、小班、林相についての情報を地図上に表しています。
+                      </p>
+                      <p
+                        style="
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 100;
+                          font-family: 'ヒラギノ角ゴ Pro W3',
+                            'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka,
+                            'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+                        "
+                      >
+                        ・担当部署：〇〇課〇〇
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h3>ご利用上の注意（必ずお読みください）</h3>
-      <ul>
-        <li>
-          本サービスは、すべての利用者の環境（パソコンやスマートフォン等）において正常に動作することを保証するものではありません。
-        </li>
-        <li>
-          利用者が本サービスを利用することによって発生した損害や損失について、築上町は一切の責任を負いません。
-        </li>
-        <li>
-          本サービスで提供する情報は、概略を示したものであり、正確な位置、範囲等を保証するものではありません。また、作成時期により現況を正確に反映していない場合があります。
-        </li>
-        <li>
-          権利や義務の発生するものなどの重要な事項の情報は、必ず担当課にご確認ください。
-        </li>
-      </ul>
-      <h3>マップ一覧</h3>
-      <h4><a href="#">土砂災害マップ（外部リンク）</a></h4>
-      <details>
-        <summary>マップの概要</summary>
-        <p>
-          築上町総合防災ハザードマップ（令和3年11月作成）に掲載している土砂災害の情報を地図上に表しています。
-        </p>
-
-        <p>築上町総合防災ハザードマップの詳細はこちらをご覧ください。</p>
-        <a href="#">築上町総合防災ハザードマップ</a>
-
-        <p>担当部署：総務課 地域安全係</p>
-      </details>
-      <h4><a href="#">洪水マップ（外部リンク）</a></h4>
-      <h4><a href="#">津波マップ（外部リンク）</a></h4>
-      <h4><a href="#">高潮マップ（外部リンク） </a></h4>
-      <h4><a href="#">消防施設位置図（外部リンク） </a></h4>
-      <h4><a href="#">第1種区域等指定図（外部リンク） </a></h4>
     </main>
   </body>
 </html>
